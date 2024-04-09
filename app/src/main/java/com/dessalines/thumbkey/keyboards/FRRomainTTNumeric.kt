@@ -8,7 +8,6 @@ import com.dessalines.thumbkey.utils.KeyDisplay
 import com.dessalines.thumbkey.utils.KeyItemC
 import com.dessalines.thumbkey.utils.KeyboardC
 import com.dessalines.thumbkey.utils.SwipeDirection
-import com.dessalines.thumbkey.utils.getLocalCurrency
 
 val KB_FR_NUMERIC_ROMAINTT =
     KeyboardC(
@@ -66,11 +65,12 @@ val KB_FR_NUMERIC_ROMAINTT =
                                     action = KeyAction.CommitText("“"),
                                     color = ColorVariant.MUTED,
                                 ),
-                        KeyC(
-                            display = KeyDisplay.TextDisplay("⍽"),
-                            action = KeyAction.CommitText("\u00A0"),
-                            color = ColorVariant.MUTED,
-                        ),
+                        SwipeDirection.TOP to
+                                KeyC(
+                                    display = KeyDisplay.TextDisplay("⍽"),
+                                    action = KeyAction.CommitText("\u00A0"),
+                                    color = ColorVariant.MUTED,
+                                ),
                         SwipeDirection.TOP_RIGHT to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("”"),
@@ -162,26 +162,31 @@ val KB_FR_NUMERIC_ROMAINTT =
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("{"),
                                     action = KeyAction.CommitText("{"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         SwipeDirection.TOP_RIGHT to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("—"),
                                     action = KeyAction.CommitText("—"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         SwipeDirection.BOTTOM_RIGHT to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("_"),
                                     action = KeyAction.CommitText("_"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         SwipeDirection.BOTTOM_LEFT to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("["),
                                     action = KeyAction.CommitText("["),
+                                    color = ColorVariant.MUTED,
                                 ),
                         SwipeDirection.LEFT to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("("),
                                     action = KeyAction.CommitText("("),
+                                    color = ColorVariant.MUTED,
                                 ),
                     ),
                 ),
@@ -280,6 +285,7 @@ val KB_FR_NUMERIC_ROMAINTT =
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("~"),
                                     action = KeyAction.CommitText("~"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         SwipeDirection.BOTTOM_RIGHT to
                                 KeyC(
@@ -363,26 +369,31 @@ val KB_FR_NUMERIC_ROMAINTT =
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("&"),
                                     action = KeyAction.CommitText("&"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         SwipeDirection.TOP_RIGHT to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("°"),
                                     action = KeyAction.CommitText("°"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         SwipeDirection.BOTTOM_RIGHT to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay(">"),
                                     action = KeyAction.CommitText(">"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         SwipeDirection.BOTTOM_LEFT to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay(";"),
                                     action = KeyAction.CommitText(";"),
+                                    color = ColorVariant.MUTED,
                                 ),
                         SwipeDirection.LEFT to
                                 KeyC(
                                     display = KeyDisplay.TextDisplay("#"),
                                     action = KeyAction.CommitText("#"),
+                                    color = ColorVariant.MUTED,
                                 ),
                     ),
                 ),
